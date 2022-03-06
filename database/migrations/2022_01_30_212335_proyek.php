@@ -20,7 +20,6 @@ class Proyek extends Migration
             $table->string('waktuberakhir');
             $table->string('deskripsi_project');
             $table->string('nama_klien');
-            $table->string('waktu');
             $table->string('status_project');
             $table->timestamps();
         });
@@ -35,7 +34,6 @@ class Proyek extends Migration
                         'waktumulai' => '1/1/1 1:11 PM ' . $a,
                         'waktuberakhir' => '1/1/1 1:11 PM ' . $a,
                         'nama_klien' => $categories[array_rand($categories)],
-                        'waktu' => '12:00 PM ' ,
                         'status_project' => $statusproject[array_rand($statusproject)]
                         // 'category' => $categories[array_rand($categories)],
                     ]);

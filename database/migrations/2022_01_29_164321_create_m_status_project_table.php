@@ -16,11 +16,6 @@ class CreateMStatusProjectTable extends Migration
         Schema::create('m_status_project', function (Blueprint $table) {
             $table->increments('id_status_project');
             $table->string('status_project');
-            $table->tinyInteger('status_aktif');
-            $table->integer('create_by');
-            $table->integer('update_by');
-            $table->integer('delete_by');
-            $table->datetime('delete_at')->timestamps();
             $table->timestamps();
         });
     }
